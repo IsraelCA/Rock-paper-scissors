@@ -3,18 +3,25 @@ var aiPoint = 0;
 
 // This function returns the selection of the computer
 function getAISelection() {
-    //TODO: randomly choose between 'rock', 'paper', or 'scissors'
+    var AIselection= ["rock,paper,scissors"];
+    array_rand(AIselection) 
 }
 
 // This function picks the winner
+ var winnerPoints=0
+ var AIpoints = 0
 function pickWinner(userValue, aiValue) {
-    //TODO: pick the correct winner: user or ai
-    //TODO: Add one point for the winner
+        if(winner=true) {
+    winnerPoints = winnerPoints + 1
+}else{
+      AIpoints= AIpoints +1
 }
+
 
 // This function sets the scoreboard with the correct points
 function setScore() {
-
+console.log(winnerPoints);
+alert("You have" + winnerPoints + "points");
 }
 
 // This function captures the click and picks the winner
