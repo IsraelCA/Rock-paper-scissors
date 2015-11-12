@@ -3,18 +3,19 @@ var aiPoint = 0;
 
 // This function returns the selection of the computer
 function getAISelection() {
-    var AIselection= ["rock,paper,scissors"];
-    array_rand(AIselection) 
+    return 'rock';
 }
 
 // This function picks the winner
  var winnerPoints=0
  var AIpoints = 0
 function pickWinner(userValue, aiValue) {
-        if(winner=true) {
-    winnerPoints = winnerPoints + 1
-}else{
-      AIpoints= AIpoints +1
+    if(userValue=="paper"){
+        setScore("userPoint",2)
+        return "user";;
+        }else if(aiValue){
+            
+        }
 }
 
 
@@ -42,5 +43,8 @@ function evaluate(evt) {
 
 // This function runs on page load
 $(document).ready(function(){
+    $(".token").on("click",function(event){
+        evaluate(event)
+    })
 
 });
